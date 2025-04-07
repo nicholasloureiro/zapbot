@@ -13,7 +13,7 @@ async def webhook(request: Request):
     if chat_id and message and not '@g.us' in chat_id:
         send_whatsapp_message(
             number=chat_id,
-            text='.'
+            text=f'{message}'
         )
     return {'status': 'ok'}
 
