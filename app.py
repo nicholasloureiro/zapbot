@@ -10,7 +10,7 @@ async def webhook(request: Request):
     chat_id = data.get('data').get('key').get('remoteJid')
     message = data.get('data').get('message').get('conversation')
 
-    if chat_id and message and not '@g.us' in chat_id:
+    if (chat_id and message and not '@g.us' in chat_id) and '553493090525' or '553491143442' in chat_id :
         send_whatsapp_message(
             number=chat_id,
             text=f'{message}'
