@@ -13,5 +13,5 @@ def send_whatsapp_message(number, text):
         'text': text,
     }
     
-    requests.post(url=url, headers=headers, payload=payload)
+    requests.post(url=url, headers=headers, json=payload)
        
