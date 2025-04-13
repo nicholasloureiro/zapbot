@@ -77,3 +77,6 @@ media/
 # Documentation
 docs/_build/
 site/
+/vectorstore
+/vectorstore_data
+/processed
